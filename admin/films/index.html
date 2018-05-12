@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>All Existing Movies | THC Admin</title>
+	<link rel="stylesheet" href="/huton/css/vendor/bootstrap.css">
+	<link rel="stylesheet" href="/huton/css/vendor/bootstrap-grid.css">
+	<link rel="stylesheet" href="/huton/css/styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="/">The Huton Collection</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav my-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Go Home</a>
+            </li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/huton/admin">Add New Movies</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Manage Existing Movies <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">View Messages</a>
+            </li>
+		  </ul>
+		</div>
+	</nav>
+	<section class="films">
+        <div class="container">
+            <div class="row section-header text-center text-capitalize mt-80">
+                <div class="col-md-12">
+                    <h2 class="display-4">Manage Existing Films</h2>
+                    <p class="text-italic">Embrace, Create</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-of-movies">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+	</section>
+	    <div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="movieDetailsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="movieDetailsTitle">Editing Item Detail</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+                        <form id="editFilm">
+                            <div class="form-group">
+                                <label for="filmTitle">Title</label>
+                                <input type="text" class="form-control" id="filmTitle" placeholder="Title Of The Film">
+                            </div>
+                            <div class="form-group">
+                                <label for="filmDes">Description</label>
+                                <textarea type="text" class="form-control" id="filmDes" placeholder="The Synoposis of The Film"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="filmPrice">Price</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">$</div>
+                                    </div>
+                                    <input type="number" class="form-control" id="filmPrice" placeholder="100">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="filmDes">Poster</label>
+                                <input type="file" class="form-control-file" id="filmPoster">
+                            </div>
+                            <input type="submit" class="btn btn-primary btn-lg btn-block submit-btn" disabled>
+                        </form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type='text/javascript' src="/huton/js/jquery.js"></script>
+	<script type='text/javascript' src="/huton/js/bootstrap.js"></script>
+    <script type='text/javascript' src="/huton/js/getDataAdmin.js"></script>
+    <script type='text/javascript' src="/huton/js/fade.js"></script>
+</body>
+</html>

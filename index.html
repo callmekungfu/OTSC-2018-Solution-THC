@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>The Hunton Collection | The Past Revisited</title>
+	<link rel="stylesheet" href="/huton/css/vendor/bootstrap.css">
+	<link rel="stylesheet" href="/huton/css/vendor/bootstrap-grid.css">
+	<link rel="stylesheet" href="/huton/css/styles.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="#">The Huton Collection</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav my-2 my-lg-0">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">The Films <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="/huton/about">About Us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/huton/contact">Contact Us</a>
+			  </li>
+		  </ul>
+		</div>
+	</nav>
+	<section class="header" style="background-image: url('/huton/images/bgs/home.jpg');">
+		<div class="container-fluid flexed h-100">
+			<div class="flex-child center-div text-center">
+				<h1 class="site-title display-1">
+					The Huton Collection
+				</h1>
+				<p class="site-description">A True Testiment of Time</p>
+				<a href="#films">
+					<button type="button" class="btn btn-outline-primary mt-30">
+						Visit The Collection
+					</button>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="films" id="films">
+		<div class="container">
+			<div class="row section-header text-center text-capitalize mt-50">
+				<div class="col-md-12">
+					<h2 class="display-4">Our Collection</h2>
+					<p class="text-italic">Currated Just For You</p>
+				</div>
+			</div>
+			<div class="card-columns card-container mt-30"></div>
+			<div class="row mt-50">
+				<div class="col-md-12 text-center">
+					<h5>That's All Folks!</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="mt-80">
+		<div class="container">
+			<div class="row text-white">
+				<div class="col-md-3">
+					<h4>Menu</h4>
+					<ul class="footer-list">
+						<li><a href="/huton/about">About Us</a></li>
+						<li><a href="/huton/">Our Selection</a></li>
+						<li><a href="/huton/contact">Contact Us</a></li>
+						<li><a href="/huton/login">Admin Panel</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 contact-container">
+					<h4>Hours</h4>
+					<p>Mon-Fri: 11:00 - 8:00</p>
+					<p>Sat: 9:00 - 6:00</p>
+					<p>Sun: Closed</p>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 contact-container">
+					<h4>Location</h4>
+					<p>121 Huton Blvd</p>
+					<p>Toronto, ON</p>
+					<p>H0H 0H0</p>
+				</div>
+				<div class="col-md-3 col-sm-12 col-xs-12 contact-container">
+					<h4>Contact Info</h4>
+					<p>Tel: 123-489-0000</p>
+					<p>Email: hello@thc.com</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade" id="movieDetails" tabindex="-1" role="dialog" aria-labelledby="movieDetailsTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="movieDetailsTitle"><span id="modalTitle"></span> - $<span id="modalPrice">N/A</span></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container">
+							<div class="row mb-30">
+								<div class="col-md-4 mt-50">
+									<img class="img-fluid" id="modalPoster" src="/huton/images/speed.jpg">
+								</div>
+								<div class="col-md-8 mt-30">
+									<h3>About The Film</h3>
+									<p id="modalDescription"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script type='text/javascript' src="/huton/js/jquery.js"></script>
+	<script type='text/javascript' src="/huton/js/bootstrap.js"></script>
+	<script type='text/javascript' src="/huton/js/getData.js"></script>
+	<script type='text/javascript' src="/huton/js/fade.js"></script>
+</body>
+</html>
